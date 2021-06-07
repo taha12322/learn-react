@@ -1,11 +1,12 @@
 import React from 'react'
 
-const Produect = () => {
+import './product.css'
+
+const Produect = (props) => {
     return (
-        <div>
-            <h3>peoduct</h3>
-            <p>product name : book1</p>
-            <p>product price : 99</p>
+        <div className='card'>
+            <p>product name : {props.title}</p>
+            <p>product price : {props.price}</p>
         </div>
     )
 }
